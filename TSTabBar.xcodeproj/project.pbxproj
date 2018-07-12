@@ -14,6 +14,15 @@
 		511D773720F705870080036C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 511D773520F705870080036C /* LaunchScreen.storyboard */; };
 		511D774220F705870080036C /* TSTabBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511D774120F705870080036C /* TSTabBarTests.swift */; };
 		511D774D20F705870080036C /* TSTabBarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511D774C20F705870080036C /* TSTabBarUITests.swift */; };
+		511D776720F706D60080036C /* TSTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511D775C20F706D60080036C /* TSTabBar.swift */; };
+		511D776820F706D60080036C /* TSTabbarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511D775D20F706D60080036C /* TSTabbarButton.swift */; };
+		511D776920F706D60080036C /* TSTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511D775E20F706D60080036C /* TSTabbarViewController.swift */; };
+		511D776A20F706D70080036C /* TSBadgeValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511D775F20F706D60080036C /* TSBadgeValue.swift */; };
+		511D776B20F706D70080036C /* TSTabBarConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511D776020F706D60080036C /* TSTabBarConfig.swift */; };
+		511D776C20F706D70080036C /* TSTUIColorWithHexString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511D776220F706D60080036C /* TSTUIColorWithHexString.swift */; };
+		511D776D20F706D70080036C /* TSTabbarViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511D776320F706D60080036C /* TSTabbarViewExtension.swift */; };
+		511D776E20F706D70080036C /* TSTabbarWithCAAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511D776420F706D60080036C /* TSTabbarWithCAAnimation.swift */; };
+		58FE0BEA7491E6916ABA78B9 /* Pods_TSTabBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 188663017FB5A48F901284AE /* Pods_TSTabBar.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		188663017FB5A48F901284AE /* Pods_TSTabBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TSTabBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C114B0BCE1DF526F991C600 /* Pods-TSTabBar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TSTabBar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TSTabBar/Pods-TSTabBar.debug.xcconfig"; sourceTree = "<group>"; };
 		511D772920F705850080036C /* TSTabBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TSTabBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		511D772C20F705850080036C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		511D772E20F705850080036C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +58,15 @@
 		511D774820F705870080036C /* TSTabBarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TSTabBarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		511D774C20F705870080036C /* TSTabBarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSTabBarUITests.swift; sourceTree = "<group>"; };
 		511D774E20F705870080036C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		511D775C20F706D60080036C /* TSTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSTabBar.swift; sourceTree = "<group>"; };
+		511D775D20F706D60080036C /* TSTabbarButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSTabbarButton.swift; sourceTree = "<group>"; };
+		511D775E20F706D60080036C /* TSTabbarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSTabbarViewController.swift; sourceTree = "<group>"; };
+		511D775F20F706D60080036C /* TSBadgeValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSBadgeValue.swift; sourceTree = "<group>"; };
+		511D776020F706D60080036C /* TSTabBarConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSTabBarConfig.swift; sourceTree = "<group>"; };
+		511D776220F706D60080036C /* TSTUIColorWithHexString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSTUIColorWithHexString.swift; sourceTree = "<group>"; };
+		511D776320F706D60080036C /* TSTabbarViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSTabbarViewExtension.swift; sourceTree = "<group>"; };
+		511D776420F706D60080036C /* TSTabbarWithCAAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSTabbarWithCAAnimation.swift; sourceTree = "<group>"; };
+		6E3941D77916EF1ECE84FFEA /* Pods-TSTabBar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TSTabBar.release.xcconfig"; path = "Pods/Target Support Files/Pods-TSTabBar/Pods-TSTabBar.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58FE0BEA7491E6916ABA78B9 /* Pods_TSTabBar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +102,8 @@
 				511D774020F705870080036C /* TSTabBarTests */,
 				511D774B20F705870080036C /* TSTabBarUITests */,
 				511D772A20F705850080036C /* Products */,
+				AF75063ED0E882148CD831B5 /* Pods */,
+				D2DE01B66DC1ABDA49FE4A38 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +120,7 @@
 		511D772B20F705850080036C /* TSTabBar */ = {
 			isa = PBXGroup;
 			children = (
+				511D775A20F706D60080036C /* TSTabbarController */,
 				511D772C20F705850080036C /* AppDelegate.swift */,
 				511D772E20F705850080036C /* ViewController.swift */,
 				511D773020F705850080036C /* Main.storyboard */,
@@ -125,6 +149,54 @@
 			path = TSTabBarUITests;
 			sourceTree = "<group>";
 		};
+		511D775A20F706D60080036C /* TSTabbarController */ = {
+			isa = PBXGroup;
+			children = (
+				511D775B20F706D60080036C /* TSTabbarControl */,
+				511D776120F706D60080036C /* TSTabbarUtility */,
+			);
+			path = TSTabbarController;
+			sourceTree = "<group>";
+		};
+		511D775B20F706D60080036C /* TSTabbarControl */ = {
+			isa = PBXGroup;
+			children = (
+				511D775C20F706D60080036C /* TSTabBar.swift */,
+				511D775D20F706D60080036C /* TSTabbarButton.swift */,
+				511D775E20F706D60080036C /* TSTabbarViewController.swift */,
+				511D775F20F706D60080036C /* TSBadgeValue.swift */,
+				511D776020F706D60080036C /* TSTabBarConfig.swift */,
+			);
+			path = TSTabbarControl;
+			sourceTree = "<group>";
+		};
+		511D776120F706D60080036C /* TSTabbarUtility */ = {
+			isa = PBXGroup;
+			children = (
+				511D776220F706D60080036C /* TSTUIColorWithHexString.swift */,
+				511D776320F706D60080036C /* TSTabbarViewExtension.swift */,
+				511D776420F706D60080036C /* TSTabbarWithCAAnimation.swift */,
+			);
+			path = TSTabbarUtility;
+			sourceTree = "<group>";
+		};
+		AF75063ED0E882148CD831B5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1C114B0BCE1DF526F991C600 /* Pods-TSTabBar.debug.xcconfig */,
+				6E3941D77916EF1ECE84FFEA /* Pods-TSTabBar.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D2DE01B66DC1ABDA49FE4A38 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				188663017FB5A48F901284AE /* Pods_TSTabBar.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +204,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 511D775120F705870080036C /* Build configuration list for PBXNativeTarget "TSTabBar" */;
 			buildPhases = (
+				9C8967D7625CFD5A5354A60D /* [CP] Check Pods Manifest.lock */,
 				511D772520F705850080036C /* Sources */,
 				511D772620F705850080036C /* Frameworks */,
 				511D772720F705850080036C /* Resources */,
+				07E75D40984E5E51FB8D3942 /* [CP] Embed Pods Frameworks */,
+				C2711A7695F00B3DCD4F3B0A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -251,13 +326,75 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		07E75D40984E5E51FB8D3942 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TSTabBar/Pods-TSTabBar-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/TSDataPersistence/TSDataPersistence.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TSDataPersistence.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TSTabBar/Pods-TSTabBar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C8967D7625CFD5A5354A60D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TSTabBar-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2711A7695F00B3DCD4F3B0A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TSTabBar/Pods-TSTabBar-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		511D772520F705850080036C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				511D776C20F706D70080036C /* TSTUIColorWithHexString.swift in Sources */,
 				511D772F20F705850080036C /* ViewController.swift in Sources */,
 				511D772D20F705850080036C /* AppDelegate.swift in Sources */,
+				511D776A20F706D70080036C /* TSBadgeValue.swift in Sources */,
+				511D776920F706D60080036C /* TSTabbarViewController.swift in Sources */,
+				511D776E20F706D70080036C /* TSTabbarWithCAAnimation.swift in Sources */,
+				511D776D20F706D70080036C /* TSTabbarViewExtension.swift in Sources */,
+				511D776B20F706D70080036C /* TSTabBarConfig.swift in Sources */,
+				511D776820F706D60080036C /* TSTabbarButton.swift in Sources */,
+				511D776720F706D60080036C /* TSTabBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +565,7 @@
 		};
 		511D775220F705870080036C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C114B0BCE1DF526F991C600 /* Pods-TSTabBar.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -446,6 +584,7 @@
 		};
 		511D775320F705870080036C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E3941D77916EF1ECE84FFEA /* Pods-TSTabBar.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

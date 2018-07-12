@@ -25,16 +25,16 @@ class TSTabBar: UITabBar {
             self.setUpSelectedIndex(selectedIndex: self.selectedIndex)
         }
     }
-    func initWithFrame(frame:CGRect, norImageArr:Array<UIImage>, selImageArr:Array<UIImage>,titleArr:Array<String>,config:TSTabBarConfig) -> TSTabBar {
+    func initWithFrame(frame:CGRect) -> TSTabBar {
         self.frame = frame
         var i = 0
-        for _ in titleArr {
+        for _ in ts_tabbar_config.titleArr {
             var tbBtn = TSTabbarButton()
             tbBtn = tbBtn.initWithFrame(frame: CGRect.zero)
-            tbBtn.imageView?.image = norImageArr[i]
-            tbBtn.title?.text = titleArr[i];
+            tbBtn.imageView?.image = ts_tabbar_config.norImageArr[i]
+            tbBtn.title?.text = ts_tabbar_config.titleArr[i];
             tbBtn.title?.textColor = ts_tabbar_config.norTitleColor;
-            tbBtn.typeLayout = config.typeLayout;
+            tbBtn.typeLayout = ts_tabbar_config.typeLayout;
             tbBtn.tag = i;
             self.addSubview(tbBtn)
 
@@ -42,9 +42,9 @@ class TSTabBar: UITabBar {
             let tap = UITapGestureRecognizer.init(target: self, action: #selector(tapClick))
             tbBtn.addGestureRecognizer(tap)
             self.saveTabBarArrM.append(tbBtn)
-            self.titleImageArrM = titleArr
-            self.norImageArrM = norImageArr
-            self.selImageArrM = selImageArr
+            self.titleImageArrM = ts_tabbar_config.titleArr
+            self.norImageArrM = ts_tabbar_config.norImageArr
+            self.selImageArrM = ts_tabbar_config.selImageArr
             i += 1
         }
         
@@ -54,7 +54,7 @@ class TSTabBar: UITabBar {
         self.backgroundColor = ts_tabbar_config.tabBarBackground
         
         //顶部线条处理
-        if (config.isClearTabBarTopLine) {
+        if (ts_tabbar_config.isClearTabBarTopLine) {
             self.topLineIsClearColor(state:true)
         } else {
             self.topLineIsClearColor(state:false)

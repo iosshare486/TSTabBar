@@ -1,0 +1,578 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1BD364B9276C7F92AEC9DC77ADF5B294 /* TSDataPersistence-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EACAA79A1C1235B67F9D32219B73F05 /* TSDataPersistence-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		311C20B6963ADDB7033CAD3399415673 /* TSDataPersistenceCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5BFE9B522964A6A73EED01AD0837D6 /* TSDataPersistenceCache.swift */; };
+		6DDFE5B08E5CFFEAB8D70EBA94088F05 /* TSDataPersistenceLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A576F55CC3B90439D2E9456AF2A95BE7 /* TSDataPersistenceLinkedList.swift */; };
+		94AA10E16B09E56CA0AA55EEE222897A /* Pods-TSTabBar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A90BEB55541B1FD203715A7C748F07E9 /* Pods-TSTabBar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A0FA3E719E6407223A36F6AB4C9EC23A /* TSDataPersistence-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD8953B8BBF1963EAD61BF6A6320894 /* TSDataPersistence-dummy.m */; };
+		A225F2D20C84C33FBCB98346C8F30A6C /* TSDataPersistenceDiskCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0460C4688B630B9405DD575F517870E7 /* TSDataPersistenceDiskCache.swift */; };
+		C00D69344E74BCF134385250468D8723 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		E834C3D891FD8605C07B5DF8B183A1D5 /* Pods-TSTabBar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9976657011B9F6D1DCD842EE7510B1D1 /* Pods-TSTabBar-dummy.m */; };
+		F08E83E37EB42F2F51874B380A9A1C03 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		FEC8903421E34BBE1BD84379FB9C7AF4 /* TSDataPersistenceMemoryCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9F01E5256AA109B128EDD517E81C81 /* TSDataPersistenceMemoryCache.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FF4D5F7831820B3A8A5265C55065F68B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6813EFC2690F1CB9826441A0BD411095;
+			remoteInfo = TSDataPersistence;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0460C4688B630B9405DD575F517870E7 /* TSDataPersistenceDiskCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TSDataPersistenceDiskCache.swift; path = TSDataPersistence/DataPersistenceTool/TSDataPersistenceDiskCache.swift; sourceTree = "<group>"; };
+		08ABF045EF346B9B29515992D50B0AE1 /* Pods-TSTabBar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TSTabBar.modulemap"; sourceTree = "<group>"; };
+		24C028770BD6BA5602880DA27D721C4E /* TSDataPersistence-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TSDataPersistence-prefix.pch"; sourceTree = "<group>"; };
+		2EACAA79A1C1235B67F9D32219B73F05 /* TSDataPersistence-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TSDataPersistence-umbrella.h"; sourceTree = "<group>"; };
+		39C0AABB380DAB6BFFF42DDE48296544 /* Pods-TSTabBar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TSTabBar.release.xcconfig"; sourceTree = "<group>"; };
+		5853BD6CEC356065206F73F8270F5ECE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		8267B97E514958AFBD8C0E341A4DD3E5 /* TSDataPersistence.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TSDataPersistence.xcconfig; sourceTree = "<group>"; };
+		88AE42CBFB144150CD6C06589EF2F153 /* Pods_TSTabBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TSTabBar.framework; path = "Pods-TSTabBar.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		97AD9B345587C6FFD141D7D656A2DF50 /* Pods-TSTabBar-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TSTabBar-frameworks.sh"; sourceTree = "<group>"; };
+		98FB68BD5783ED43875B50A938BB5C4C /* Pods-TSTabBar-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TSTabBar-acknowledgements.plist"; sourceTree = "<group>"; };
+		9976657011B9F6D1DCD842EE7510B1D1 /* Pods-TSTabBar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TSTabBar-dummy.m"; sourceTree = "<group>"; };
+		9A08CCF1534FB2822D6A75200C79A434 /* TSDataPersistence.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TSDataPersistence.modulemap; sourceTree = "<group>"; };
+		A576F55CC3B90439D2E9456AF2A95BE7 /* TSDataPersistenceLinkedList.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TSDataPersistenceLinkedList.swift; path = TSDataPersistence/DataPersistenceTool/TSDataPersistenceLinkedList.swift; sourceTree = "<group>"; };
+		A90BEB55541B1FD203715A7C748F07E9 /* Pods-TSTabBar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TSTabBar-umbrella.h"; sourceTree = "<group>"; };
+		ADA749AF7191F48C8A28B81C7C409DA5 /* Pods-TSTabBar-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TSTabBar-resources.sh"; sourceTree = "<group>"; };
+		BD5BFE9B522964A6A73EED01AD0837D6 /* TSDataPersistenceCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TSDataPersistenceCache.swift; path = TSDataPersistence/DataPersistenceTool/TSDataPersistenceCache.swift; sourceTree = "<group>"; };
+		BFD8953B8BBF1963EAD61BF6A6320894 /* TSDataPersistence-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TSDataPersistence-dummy.m"; sourceTree = "<group>"; };
+		CB9F01E5256AA109B128EDD517E81C81 /* TSDataPersistenceMemoryCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TSDataPersistenceMemoryCache.swift; path = TSDataPersistence/DataPersistenceTool/TSDataPersistenceMemoryCache.swift; sourceTree = "<group>"; };
+		E0CCE01731C9D612EC15E739291F183C /* Pods-TSTabBar-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TSTabBar-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F51D57EACC3663BB293EE8B89D1B1EF1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7265742C416B25BE39F8AA6EE3BBE82 /* TSDataPersistence.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TSDataPersistence.framework; path = TSDataPersistence.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA9346021357BB35726FAA217F80E6C5 /* Pods-TSTabBar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TSTabBar.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5321311E8605F6E064286B7617499293 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C00D69344E74BCF134385250468D8723 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9866471860DEF76004E3B679539161C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F08E83E37EB42F2F51874B380A9A1C03 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0DEFC5558BEF098234DC5327E453C7A4 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7C001999E9B32EE26191604390E0B3D6 /* Pods-TSTabBar */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		3D58D6524B9A024BCCBDAB2576108C48 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				88AE42CBFB144150CD6C06589EF2F153 /* Pods_TSTabBar.framework */,
+				F7265742C416B25BE39F8AA6EE3BBE82 /* TSDataPersistence.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		71705DAC578AB5DCA8DA7CFBAA910220 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8FCB95D6E818C279FAD233372F7D7599 /* TSDataPersistence */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7C001999E9B32EE26191604390E0B3D6 /* Pods-TSTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				F51D57EACC3663BB293EE8B89D1B1EF1 /* Info.plist */,
+				08ABF045EF346B9B29515992D50B0AE1 /* Pods-TSTabBar.modulemap */,
+				E0CCE01731C9D612EC15E739291F183C /* Pods-TSTabBar-acknowledgements.markdown */,
+				98FB68BD5783ED43875B50A938BB5C4C /* Pods-TSTabBar-acknowledgements.plist */,
+				9976657011B9F6D1DCD842EE7510B1D1 /* Pods-TSTabBar-dummy.m */,
+				97AD9B345587C6FFD141D7D656A2DF50 /* Pods-TSTabBar-frameworks.sh */,
+				ADA749AF7191F48C8A28B81C7C409DA5 /* Pods-TSTabBar-resources.sh */,
+				A90BEB55541B1FD203715A7C748F07E9 /* Pods-TSTabBar-umbrella.h */,
+				FA9346021357BB35726FAA217F80E6C5 /* Pods-TSTabBar.debug.xcconfig */,
+				39C0AABB380DAB6BFFF42DDE48296544 /* Pods-TSTabBar.release.xcconfig */,
+			);
+			name = "Pods-TSTabBar";
+			path = "Target Support Files/Pods-TSTabBar";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				71705DAC578AB5DCA8DA7CFBAA910220 /* Pods */,
+				3D58D6524B9A024BCCBDAB2576108C48 /* Products */,
+				0DEFC5558BEF098234DC5327E453C7A4 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		84B92848276708A4A6DD5B8F3EC5975E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5853BD6CEC356065206F73F8270F5ECE /* Info.plist */,
+				9A08CCF1534FB2822D6A75200C79A434 /* TSDataPersistence.modulemap */,
+				8267B97E514958AFBD8C0E341A4DD3E5 /* TSDataPersistence.xcconfig */,
+				BFD8953B8BBF1963EAD61BF6A6320894 /* TSDataPersistence-dummy.m */,
+				24C028770BD6BA5602880DA27D721C4E /* TSDataPersistence-prefix.pch */,
+				2EACAA79A1C1235B67F9D32219B73F05 /* TSDataPersistence-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TSDataPersistence";
+			sourceTree = "<group>";
+		};
+		8FCB95D6E818C279FAD233372F7D7599 /* TSDataPersistence */ = {
+			isa = PBXGroup;
+			children = (
+				BD5BFE9B522964A6A73EED01AD0837D6 /* TSDataPersistenceCache.swift */,
+				0460C4688B630B9405DD575F517870E7 /* TSDataPersistenceDiskCache.swift */,
+				A576F55CC3B90439D2E9456AF2A95BE7 /* TSDataPersistenceLinkedList.swift */,
+				CB9F01E5256AA109B128EDD517E81C81 /* TSDataPersistenceMemoryCache.swift */,
+				84B92848276708A4A6DD5B8F3EC5975E /* Support Files */,
+			);
+			name = TSDataPersistence;
+			path = TSDataPersistence;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0AC640961B44C16BFE6F14939D3CB887 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BD364B9276C7F92AEC9DC77ADF5B294 /* TSDataPersistence-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		753B27B253955FACF07F7E374AC1CC66 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94AA10E16B09E56CA0AA55EEE222897A /* Pods-TSTabBar-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6813EFC2690F1CB9826441A0BD411095 /* TSDataPersistence */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A48529C744AB1FD3B8E723AFED0C418D /* Build configuration list for PBXNativeTarget "TSDataPersistence" */;
+			buildPhases = (
+				A31E5BDD4769F8758381BEF6F87C0684 /* Sources */,
+				9866471860DEF76004E3B679539161C0 /* Frameworks */,
+				0AC640961B44C16BFE6F14939D3CB887 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TSDataPersistence;
+			productName = TSDataPersistence;
+			productReference = F7265742C416B25BE39F8AA6EE3BBE82 /* TSDataPersistence.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FF329D81AC2347132061770D26B0A2B1 /* Pods-TSTabBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0234FCA069A55BD5D024FB5F4C2EEDC8 /* Build configuration list for PBXNativeTarget "Pods-TSTabBar" */;
+			buildPhases = (
+				0DEC494588B519862EE75D14C15FD4DB /* Sources */,
+				5321311E8605F6E064286B7617499293 /* Frameworks */,
+				753B27B253955FACF07F7E374AC1CC66 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8968B56E4181E2F9BA6E81168DB6B173 /* PBXTargetDependency */,
+			);
+			name = "Pods-TSTabBar";
+			productName = "Pods-TSTabBar";
+			productReference = 88AE42CBFB144150CD6C06589EF2F153 /* Pods_TSTabBar.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 3D58D6524B9A024BCCBDAB2576108C48 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF329D81AC2347132061770D26B0A2B1 /* Pods-TSTabBar */,
+				6813EFC2690F1CB9826441A0BD411095 /* TSDataPersistence */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0DEC494588B519862EE75D14C15FD4DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E834C3D891FD8605C07B5DF8B183A1D5 /* Pods-TSTabBar-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A31E5BDD4769F8758381BEF6F87C0684 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0FA3E719E6407223A36F6AB4C9EC23A /* TSDataPersistence-dummy.m in Sources */,
+				311C20B6963ADDB7033CAD3399415673 /* TSDataPersistenceCache.swift in Sources */,
+				A225F2D20C84C33FBCB98346C8F30A6C /* TSDataPersistenceDiskCache.swift in Sources */,
+				6DDFE5B08E5CFFEAB8D70EBA94088F05 /* TSDataPersistenceLinkedList.swift in Sources */,
+				FEC8903421E34BBE1BD84379FB9C7AF4 /* TSDataPersistenceMemoryCache.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8968B56E4181E2F9BA6E81168DB6B173 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TSDataPersistence;
+			target = 6813EFC2690F1CB9826441A0BD411095 /* TSDataPersistence */;
+			targetProxy = FF4D5F7831820B3A8A5265C55065F68B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1C75F278C40F82167FCB969E1B351701 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA9346021357BB35726FAA217F80E6C5 /* Pods-TSTabBar.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TSTabBar/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TSTabBar/Pods-TSTabBar.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TSTabBar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		47377C534F2660D60727F469D26CD9D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39C0AABB380DAB6BFFF42DDE48296544 /* Pods-TSTabBar.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TSTabBar/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TSTabBar/Pods-TSTabBar.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TSTabBar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C3E37FB098AE76440E29106ADBF00CEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		CC547E03909A8AC8EF16E68C67A919BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8267B97E514958AFBD8C0E341A4DD3E5 /* TSDataPersistence.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TSDataPersistence/TSDataPersistence-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TSDataPersistence/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TSDataPersistence/TSDataPersistence.modulemap";
+				PRODUCT_NAME = TSDataPersistence;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DA03565BE765DB55C6448FB363A44481 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		FB6A728B6D73CD1F6FE766110FC10BD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8267B97E514958AFBD8C0E341A4DD3E5 /* TSDataPersistence.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TSDataPersistence/TSDataPersistence-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TSDataPersistence/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TSDataPersistence/TSDataPersistence.modulemap";
+				PRODUCT_NAME = TSDataPersistence;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0234FCA069A55BD5D024FB5F4C2EEDC8 /* Build configuration list for PBXNativeTarget "Pods-TSTabBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C75F278C40F82167FCB969E1B351701 /* Debug */,
+				47377C534F2660D60727F469D26CD9D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3E37FB098AE76440E29106ADBF00CEB /* Debug */,
+				DA03565BE765DB55C6448FB363A44481 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A48529C744AB1FD3B8E723AFED0C418D /* Build configuration list for PBXNativeTarget "TSDataPersistence" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC547E03909A8AC8EF16E68C67A919BD /* Debug */,
+				FB6A728B6D73CD1F6FE766110FC10BD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

@@ -1,0 +1,12 @@
+PODS:
+  - TSDataPersistence (0.2.2)
+
+DEPENDENCIES:
+  - TSDataPersistence
+
+SPEC CHECKSUMS:
+  TSDataPersistence: 6f07b05cdec19a379a105c032f52bb499c7b0d4a
+
+PODFILE CHECKSUM: 626a020c56dd218ad6897fdaf35c1388c6eaf1fd
+
+COCOAPODS: 1.4.0

@@ -44,26 +44,100 @@ open class TSTabBarConfig: NSObject {
     
     /******************************** tabBar 基本配置 ********************************/
     /** 布局类型 (默认是 图片在上, 文字在下) */
-    var typeLayout : TSConfigTypeLayout = .TSConfigTypeLayoutNormal
+    private(set) var typeLayout : TSConfigTypeLayout = .TSConfigTypeLayoutNormal
     /** 标题的默认颜色 (默认为 #808080) */
-    var norTitleColor : UIColor = UIColor.ts_colorWithHexString(color: "#808080")
+    private(set) var norTitleColor : UIColor = UIColor.ts_colorWithHexString(color: "#808080")
     /** 标题的选中颜色 (默认为 #d81e06)*/
-    var selTitleColor : UIColor = UIColor.ts_colorWithHexString(color: "#d81e06")
+    private(set) var selTitleColor : UIColor = UIColor.ts_colorWithHexString(color: "#d81e06")
     /** 图片的size (默认 28*28) */
-    var imageSize : CGSize = CGSize(width: 28, height: 28)
-    var tabBarAnimtype : TSConfigTabBarAnimType?
+    private(set) var imageSize : CGSize = CGSize(width: 28, height: 28)
+    private(set) var tabBarAnimtype : TSConfigTabBarAnimType?
     /** 是否显示tabBar顶部线条颜色 (默认 YES) */
     var isClearTabBarTopLine : Bool = true
     /** tabBar顶部线条颜色 (默认亮灰色) */
-    public var tabBarTopLineColor : UIColor = .lightGray
+    private(set) var tabBarTopLineColor : UIColor = .lightGray
     /** tabBar的背景颜色 (默认白色) */
-    var tabBarBackground : UIColor = .white
+    private(set) var tabBarBackground : UIColor = .white
     /** tabBarController */
     var tabBarController : TSTabbarViewController?
-    var tabbarDefaultConfigDelegate : TSTabbarDefaultConfig?
+    private(set) var controllersArr : Array<UIViewController> = []
+    private(set) var titleArr : Array<String> = []
+    private(set) var norImageArr : Array<UIImage> = []
+    private(set) var selImageArr : Array<UIImage> = []
+    
+    
+    func setTypeLayout(typeLayout: TSConfigTypeLayout) {
+        self.typeLayout = typeLayout
+    }
+    func setNorTitleColor(color: UIColor) {
+        self.norTitleColor = color
+    }
+    func setImageSize(imageSize: CGSize) {
+        self.imageSize = imageSize
+    }
+    func setTabBarAnimtype(type:TSConfigTabBarAnimType) {
+        self.tabBarAnimtype = type
+    }
+    func setIsClearTabBarTopLine(state:Bool) {
+        self.isClearTabBarTopLine = state
+    }
+    func setTabBarBackground(color:UIColor) {
+        self.tabBarBackground = color
+    }
+    func setTabBarTopLineColor(color:UIColor) {
+        self.tabBarTopLineColor = color
+    }
+    func setControllersArr(controllers: [UIViewController]) {
+        self.controllersArr = controllers
+    }
+    func setTitleArr(array: [String]) {
+        self.titleArr = array
+    }
+    func setNorImageArr(normalimagearr: [UIImage]) {
+        self.norImageArr = normalimagearr
+    }
+    func setSelImageArr(selimagearr: [UIImage]) {
+        self.selImageArr = selimagearr
+    }
+    func setBadgeTextColor(color: UIColor) {
+        self.badgeTextColor = color
+    }
+    
+    func setBadgeBackgroundColor(color: UIColor) {
+        self.badgeBackgroundColor = color
+    }
+    func setBadgeSize(size: CGSize) {
+        self.badgeSize = size
+    }
+    func setBadgeOffset(offset: CGPoint) {
+        self.badgeOffset = offset
+    }
+    func setBadgeRadius(radius: CGFloat) {
+        self.badgeRadius = radius
+    }
+    func setbadgeAnimType(type: TSConfigBadgeAnimType) {
+        self.animType = type
+    }
+    func setTabBarInfo(info: [TSTabBarInfoModel]) {
+        self.tabBarInfo = info
+    }
+    
+    /***********************************************************************************/
+
+    private(set) var tabBarInfo : [TSTabBarInfoModel] = []{
+        didSet{
+            for tabBarItem in tabBarInfo {
+                self.titleArr.append(tabBarItem.title)
+                self.norImageArr.append(tabBarItem.norImage!)
+                self.selImageArr.append(tabBarItem.selImage!)
+                self.controllersArr.append(tabBarItem.controller!)
+            }
+        }
+    }
+    
     /******************************** badgeValue 基本配置 ********************************/
     /** badgeColor(默认 #FFFFFF) */
-    var badgeTextColor : UIColor = .white{
+    private(set) var badgeTextColor : UIColor = .white{
         didSet{
             let arrM = getTabBarButtons()
             for btn in arrM {
@@ -72,7 +146,7 @@ open class TSTabBarConfig: NSObject {
         }
     }
     /** badgeBackgroundColor (默认 #FF4040)*/
-    var badgeBackgroundColor : UIColor = UIColor.ts_colorWithHexString(color: "#FF4040"){
+    private(set) var badgeBackgroundColor : UIColor = UIColor.ts_colorWithHexString(color: "#FF4040"){
             didSet{
                     let arrM = getTabBarButtons()
                     for btn in arrM {
@@ -81,7 +155,7 @@ open class TSTabBarConfig: NSObject {
             }
     }
     /** badgeSize (如没有特殊需求, 请勿修改此属性, 此属性只有在控制器加载完成后有效)*/
-    var badgeSize: CGSize = CGSize(width: 20.0, height: 20.0) {
+    private(set) var badgeSize: CGSize = CGSize(width: 20.0, height: 20.0) {
         didSet{
             let arrM = getTabBarButtons()
             for btn in arrM {
@@ -90,7 +164,7 @@ open class TSTabBarConfig: NSObject {
         }
     }
     /** badgeOffset (如没有特殊需求, 请勿修改此属性, 此属性只有在控制器加载完成后有效) */
-    var badgeOffset : CGPoint = CGPoint(x: 0, y: 0 ){
+    private(set) var badgeOffset : CGPoint = CGPoint(x: 0, y: 0 ){
         didSet{
             let arrM = getTabBarButtons()
             for btn in arrM {
@@ -100,7 +174,7 @@ open class TSTabBarConfig: NSObject {
         }
     }
     /** badge圆角大小 (如没有特殊需求, 请勿修改此属性, 此属性只有在控制器加载完成后有效, 一般配合badgeSize或badgeOffset使用) */
-    var badgeRadius : CGFloat = 4.0{
+    private(set) var badgeRadius : CGFloat = 4.0{
         didSet{
             let arrM = getTabBarButtons()
             for btn in arrM {
@@ -109,7 +183,7 @@ open class TSTabBarConfig: NSObject {
         }
     }
     /** badge动画 (默认无动画) */
-    var animType : TSConfigBadgeAnimType?
+    private(set) var animType : TSConfigBadgeAnimType?
     
     
     
@@ -251,60 +325,31 @@ open class TSTabBarConfig: NSObject {
 
 
 extension TSTabBarConfig{
-    func startConfigTabbar(window:UIWindow) {
-        TSTabbarDataCache.getTabbarInfoCache { (tabbarInfo) in
-//            self.configTabBar(tabBarInfo: TSTabBarInfoModel(), window:window)
-            var newTabbarInfo : TSTabBarInfoModel?
+    func getTabBarVC() -> TSTabbarViewController {
 
-            if tabbarInfo != nil {
-                //数据有效
-                newTabbarInfo = tabbarInfo
-                self.configTabBar(tabBarInfo: newTabbarInfo!, window: window)
-            }else{
-                //数据无效，执行默认配置
-                self.tabbarDefaultConfigDelegate?.tabBarDefaultConfig()
-
-            }
-            
-        }
+        self.tabBarController = TSTabbarViewController().initWithTabBarControllers()
+        return self.tabBarController!
+        
     }
-    func configTabBar(tabBarInfo:TSTabBarInfoModel, window:UIWindow) {
 
-        let titleArr = tabBarInfo.titleArr
-        var imageNormalArr = Array<UIImage>()
-        var imageSelectedArr = Array<UIImage>()
-
-        for data in tabBarInfo.norImageArr {
-            let image : UIImage = UIImage.init(data: data)!
-            imageNormalArr.append(image)
-        }
-        for data2 in tabBarInfo.selImageArr {
-            let image :UIImage = UIImage.init(data: data2)!
-            imageSelectedArr.append(image)
-        }
-        
-
-        var controllersArr = Array<UIViewController>();
-
-        for title in titleArr {
-            if titleArr.index(of: title) == 0 {
-                let vc = ViewController()
-                let nav = UINavigationController(rootViewController: vc)
-                controllersArr.append(nav)
-            }else{
-                let vc = UIViewController()
-                let nav = UINavigationController(rootViewController: vc)
-                controllersArr.append(nav)
-            }
-
-        }
-        
-        let tabBarVc = TSTabbarViewController().initWithTabBarControllers(controllers: controllersArr, norImageArr: imageNormalArr , selImageArr: imageSelectedArr , titleArr: titleArr, config: ts_tabbar_config)
-
-        
-        window.rootViewController = tabBarVc;
-    }
 }
+
+
+
+
+
+
+
+
+class TSTabBarInfoModel: NSObject {
+    var title : String = ""
+    var norImage : UIImage?
+    var selImage : UIImage?
+    var controller : UIViewController?
+    
+}
+
+
 
 
 
