@@ -72,6 +72,9 @@ open class TSTabBarConfig: NSObject {
     func setNorTitleColor(color: UIColor) {
         self.norTitleColor = color
     }
+    func setSelTitleColor(color: UIColor) {
+        self.selTitleColor = color
+    }
     func setImageSize(imageSize: CGSize) {
         self.imageSize = imageSize
     }

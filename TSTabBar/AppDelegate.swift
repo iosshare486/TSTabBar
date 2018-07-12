@@ -81,10 +81,50 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     
     @objc func setBadge() {
+        
+        
+        
+//        /** 标题的默认颜色 (默认为 #808080) */
+//        private(set) var norTitleColor : UIColor = UIColor.ts_colorWithHexString(color: "#808080")
+//        /** 标题的选中颜色 (默认为 #d81e06)*/
+//        private(set) var selTitleColor : UIColor = UIColor.ts_colorWithHexString(color: "#d81e06")
+//        /** 图片的size (默认 28*28) */
+//        private(set) var imageSize : CGSize = CGSize(width: 28, height: 28)
+//        private(set) var tabBarAnimtype : TSConfigTabBarAnimType?
+//        /** 是否显示tabBar顶部线条颜色 (默认 YES) */
+//        var isClearTabBarTopLine : Bool = true
+//        /** tabBar顶部线条颜色 (默认亮灰色) */
+//        private(set) var tabBarTopLineColor : UIColor = .lightGray
+//        /** tabBar的背景颜色 (默认白色) */
+//        private(set) var tabBarBackground : UIColor = .white
+        
+//        /** 标题的默认颜色 (默认为 #808080) */
+//        ts_tabbar_config.setNorTitleColor(color: UIColor.blue)
+//        /** 标题的选中颜色 (默认为 #d81e06)*/
+//        ts_tabbar_config.setSelTitleColor(color: UIColor.blue)
+//        /** 图片的size (默认 28*28) */
+//        ts_tabbar_config.setImageSize(imageSize: CGSize(width: 20, height: 20))
+//        /** tabBarItem选中动画 */
+//        ts_tabbar_config.setTabBarAnimtype(type: .TSConfigTabBarAnimTypeRotationY)
+//        /** 是否展示tabBar顶部线条 */
+//        ts_tabbar_config.setIsClearTabBarTopLine(state: false)
+//        /** 设置顶部线条颜色 */
+//        ts_tabbar_config.setTabBarTopLineColor(color: UIColor.blue)
+//        /** 设置tabbar背景色 */
+//        ts_tabbar_config.setBadgeBackgroundColor(color: UIColor.blue)
+        
         ts_tabbar_config.setbadgeAnimType(type: .TSConfigBadgeAnimTypeScale)
         ts_tabbar_config.setBadgeBackgroundColor(color:UIColor.red)
+        ts_tabbar_config.setBadgeTextColor(color: UIColor.blue)
+        ts_tabbar_config.setBadgeRadius(radius: 4)
+        ts_tabbar_config.setBadgeOffset(offset: CGPoint(x: 30, y: 30))
+        ts_tabbar_config.setBadgeSize(size: CGSize(width: 20, height: 20))
+        
+        
+        
         ts_tabbar_config.showPointBadgeAtIndex(index: 1)
         ts_tabbar_config.showNewBadgeAtIndex(index: 2)
+        ts_tabbar_config.showNumberBadgeValue(badgeValue: "67", index: 4)
         //        ts_tabbar_config.showNewBadgeAtIndex(index: 1)
         //        ts_tabbar_config.showPointBadgeAtIndex(index: 2)
         
@@ -92,7 +132,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //        ts_tabbar_config.showNumberBadgeValue(badgeValue: "67", index: 4)
         
 //        ts_tabbar_config.animType = .TSConfigBadgeAnimTypeShake
-        ts_tabbar_config.showNumberBadgeValue(badgeValue: "67", index: 4)
         
         //        ts_tabbar_config.animType = .TSConfigBadgeAnimTypeOpacity
         //        ts_tabbar_config.showNumberBadgeValue(badgeValue: "67", index: 4)
